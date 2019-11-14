@@ -734,7 +734,6 @@ private[akka] class ClusterShardingGuardian extends Actor {
         allocationStrategy,
         handOffStopMessage) =>
       try {
-        import settings.role
         import settings.tuningParameters.coordinatorFailureBackoff
 
         val rep = replicator(settings)
